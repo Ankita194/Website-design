@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How To Do Something | Programming using for loop</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+
+<body>
+	<header>
+            <img src="../images/logo.jpeg" alt="How to do Something Logo">
+            <h2>How To Do Something!</h2>
+            <h3>Learn To Code in Java</h3>
+    </header>
+    
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+	        <li><a href="../main.html" >Home</a></li>
+            <li><a href="../Aboutus/index.html" >About Us</a></li>
+	        <li><a href="../forloop/index.html" class="current">For Loop</a></li>
+            <li><a href="../whileloop/index.html">While Loop</a></li>
+	        <li><a href="../arrays/index.html">Arrays</a></li>
+            <li><a href="../switchcase/index.html">Switch Case </a></li>
+	    </ul>
+    </nav>
+	<main>
+	    <section>
+             <h1 >Programming using for loop </h1>
+            <p>
+                In this tutorial, we will learn how to use for loop in Java with the help of examples and we will also learn about the working of Loop in computer programming.In computer programming, loops are used to repeat a block of code. For example, if you want to show a message 100 times, then rather than typing the same code 100 times, you can use a loop.
+            </p>
+             <pre>
+                <code>
+                <span>for</span>(init; condition; incre/decre) {
+                <span>//code to be executed</span>
+                }
+          </code>
+          </pre>
+             <p>
+                The Java for loop is a control flow statement that iterates a part of the programs multiple times. 	If the number of iteration is fixed, it is recommended to use for loop.
+            </p>        
+       
+              <h3>Examples</h3>
+            <p> Program to display numbers from 1 to 5</p>
+            <pre>
+            <code>
+            <span>class Main {
+                public static void main(String[] args) {
+                    int n = 5;
+                    // for loop  
+                    for (int i = 1; i <= n; ++i) {
+                    
+                        System.out.println("Java is fun");
+                           }
+                        }
+                    }
+                </span>  </span>
+          </code>
+          </pre>
+            <h3>Flowchart for for loop</h3>
+                <img src="../images/forloop.jpeg" alt="Flowchart of Java for loop" align="left">
+           
+             <br>
+            <div><a href="/Quiz/postquiz.html"><input type="button" class="button" value="Take Quiz" name="startQuiz"></a></div>
+            
+	    </section>
+	    
+	    <aside>
+            <h2>Additional resources</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=3jMaKlNBjug">For Loop Java Tutorial</a></li>
+    
+                <li><a href="https://www.youtube.com/watch?v=cakN0XC6CcQ">Java Tutorial-for loops</a></li>
+                
+                <li><a href="https://www.youtube.com/watch?v=cxhf69OL_oM">Loops in Java</a></li>
+    
+            </ul>
+           
+        </aside>
+	</main>
+
+    <footer>
+	    <p >&copy; SEMO 2021</p>
+	</footer>
+</body>
+</html>

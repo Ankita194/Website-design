@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>How To Do Something | Answer to post quiz</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+
+<body>
+	<header>
+            <img src="../images/logo.jpeg" alt="How to do Something Logo">
+            <h2>How To Do Something!</h2>
+            <h3>Learn To Code in Java</h3>
+    </header>
+    
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+	        <li><a href="../main.html">Home</a></li>
+            <li><a href="../Aboutus/index.html" >About Us</a></li>
+	        <li><a href="../forloop/index.html">For Loop</a></li>
+            <li><a href="../whileloop/index.html">While Loop</a></li>
+	        <li><a href="../arrays/index.html">Arrays</a></li>
+            <li><a href="../switchcase/index.html">Switch Case </a></li>
+	    </ul>
+    </nav>
+	<main>
+	    <div id="page-wrap">
+
+		<h1>Quiz Questions</h1>
+		
+		<form id="form1">
+		<fieldset>
+         
+                
+                    <h3 class="que"> Write a program to calculate the sum of first 10 natural number.</h3>
+                  <pre>
+            <code>
+            <span>public class SumNumbers
+{
+    public static void main(String[] args)
+    {
+        int sum = 0;
+        for(int i=1; i<=10; i++)
+        {
+            sum += i;
+        }
+        System.out.println("Sum: " + sum);
+    }
+}
+
+                </span> </span>
+          </code>
+          </pre>
+
+                    <h3 class="que"> Write a program that prompts the user to input a positive integer. It should then print the multiplication table of that number.</h3>
+                        <pre>
+            <code>
+            <span>import java.util.Scanner;
+
+public class Table
+{
+    public static void main(String[] args)
+    {
+        Scanner console = new Scanner(System.in);
+        int num;
+        
+        System.out.print("Enter any positive integer: ");
+        num = console.nextInt();
+                
+        System.out.println("Multiplication Table of " + num);
+        
+        for(int i=1; i<=10; i++)
+        {
+            System.out.println(num +" x " + i + " = " + (num*i) );
+        }
+    }
+}
+
+                </>
+                </span> 
+          </code>
+          </pre>
+
+                    <h3 class="que">Write a Java program to detect key presses.</h3>
+                       <pre>
+            <code>
+            <span>import java.io.*;
+            public class JavaExercises{
+            public static void main(String[] args){
+            detectKey();
+            }
+            static void detectKey(){
+            char key=' ';
+            System.out.print("Press a number key:");
+            try{
+            key = (char)System.in.read();
+            }catch(IOException e){};
+            switch (key)
+            {
+            case '0': System.out.println("You pressed 0."); break;
+            case '1': System.out.println("You pressed 1."); break; 
+            case '2': System.out.println("You pressed 2."); break;
+            case '3': System.out.println("You pressed 3."); break;
+            case '4': System.out.println("You pressed 4."); break;
+            case '5': System.out.println("You pressed 5."); break;
+            case '6': System.out.println("You pressed 6."); break;
+            case '7': System.out.println("You pressed 7."); break;
+            case '8': System.out.println("You pressed 8."); break;
+            case '9': System.out.println("You pressed 9."); break;
+            default: System.out.println("Not allowed!"); break;
+            }
+            }
+            }
+                </span>
+          </code>
+          </pre>
+
+     
+                    <h3 class="que">By using the bubble sort algorithm, write a Java program to sort an integer array of 10 elements in ascending.</h3>
+                   <pre>
+            <code>
+            <span>public class BubbleSort {
+
+public static void main(String[] args){
+//unsorted array
+int[] arr={12,34,23,2,4,56,80,34,45,90};
+//sorted array using bubble sort
+bubblesort(arr,arr.length);
+//display the content of sorted array
+int i;
+for(i=0;i<arr.length;i++) System.out.println(arr[i]);
+
+}
+
+public static void bubblesort(int[] dataset, int n){
+int i,j;
+for(i=0;i<n;i++)
+for(j=n-1;j>i;j--)
+if(dataset[j]<dataset[j-1])
+{
+int temp=dataset[j];
+dataset[j]=dataset[j-1];
+dataset[j-1]=temp;
+    }
+
+ }
+
+}
+                </span> </span>
+          </code>
+          </pre>
+
+                  
+            <button class="button" type="submit" value="Submit "><a href="../thankyou/index.html">Finish Quiz</a> </button>
+            
+		</fieldset>
+		</form>
+           
+        </div>
+
+	</main>
+
+    <footer>
+	    <p>&copy; SEMO 2021</p>
+	</footer>
+</body>
+</html>

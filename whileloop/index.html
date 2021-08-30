@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>How To Do Something | Programming using while loop</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+
+<body>
+	<header>
+            <img src="../images/logo.jpeg" alt="How to do Something Logo">
+            <h2>How To Do Something!</h2>
+            <h3>Learn To Code in Java</h3>
+    </header>
+    
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+	        <li><a href="../main.html" >Home</a></li>
+            <li><a href="../Aboutus/index.html" >About Us</a></li>
+	        <li><a href="../forloop/index.html" >For Loop</a></li>
+            <li><a href="/whileloop/index.html" class="current">While Loop</a></li>
+	        <li><a href="../arrays/index.html" >Arrays</a></li>
+            <li><a href="../switchcase/index.html">Switch Case </a></li>
+	    </ul>
+    </nav>
+	<main>
+	    <section>
+             <h1 >Programming using while loop</h1>
+            <p>
+                A while loop statement in Java programming language repeatedly executes a target statement as long as a given condition is true.
+            </p>
+            <p>
+                The syntax of the while loop in Java is:
+            </p>
+             <pre>
+                <code>
+                <span>while(Boolean_expression) {
+                // Statements
+                }</span>
+          </code>
+          </pre>
+            <p>
+             Here, statement(s) may be a single statement or a block of statements. The condition may be any expression, and true is any non zero value.
+            </p>
+            <p>When executing, if the boolean_expression result is true, then the actions inside the loop will be executed. This will continue as long as the expression result is true.When the condition becomes false, program control passes to the line immediately following the loop.</p>
+       
+             <h3>Examples</h3>
+            <p> Program to display numbers from 1 to 5</p>
+            <pre>
+            <code>
+            <span>
+            class Main {
+                public static void main(String[] args) {
+                // declare variables
+                    int i = 1, n = 5;
+                // while loop from 1 to 5
+                    while(i <= n) {
+                        System.out.println(i);
+                        i++;
+                            }
+                        }
+                    }
+                </span>  </span>
+          </code>
+          </pre>
+            <h3>Flowchart for while loop</h3>
+            <img src="../images/whileloop.png" alt="Flowchart of Java using while loop">
+            
+            <div><a href="/Quiz/postquiz.html"><input type="button"  class="button" value="Take Quiz" name="startQuiz"></a></div>
+	    </section>
+	    
+	    <aside>
+            <h2>Additional resources</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=SGJ9DpxGCkY"> Java While Loop Tutorial</a></li>
+    
+                <li><a href="https://www.youtube.com/watch?v=8ZuWD2CBjgs">Basic while loop</a></li>
+    
+            </ul>
+        </aside>
+	</main>
+
+    <footer>
+	    <p >&copy; SEMO 2021</p>
+	</footer>
+</body>
+</html>
